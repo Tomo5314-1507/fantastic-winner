@@ -98,24 +98,24 @@ public class Question4 {
 		}
 		System.out.println("合計値:" + sum1);
 
-		//		//Q9
-		//		int[][] array2 = {
-		//				{12 , 15 , 8},
-		//				{ 6 , 19 ,25},
-		//				{30 ,  2 ,10},
-		//		};
-		//		
-		//		int max1 = Integer.MIN_VALUE;
-		//		int min1 = Integer.MAX_VALUE;
-		//		
-		//		for (int[] row : array2) {
-		//			for (int n : row) {
-		//				if (n > max1) max1 = n;
-		//				if (n < min1) min1 = n;
-		//			}
-		//		}
-		//		System.out.println("最大値:" + max1);
-		//		System.out.println("最小値:" + min1);
+				//Q9
+				int[][] array2 = {
+						{12 , 15 , 8},
+						{ 6 , 19 ,25},
+						{30 ,  2 ,10},
+				};
+				
+				int max1 = Integer.MIN_VALUE;
+				int min1 = Integer.MAX_VALUE;
+				
+				for (int[] row : array2) {
+					for (int n : row) {
+						if (n > max1) max1 = n;
+						if (n < min1) min1 = n;
+					}
+				}
+				System.out.println("最大値:" + max1);
+				System.out.println("最小値:" + min1);
 
 		//Q10
 		int[][][] array3 = {

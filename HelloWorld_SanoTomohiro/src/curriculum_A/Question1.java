@@ -14,13 +14,13 @@ public class Question1 {
 		long longNum = 0L;
 		longNum = 10000L; //変数longNumに10000を代入
 
-		float floatNum = 0;
+		float floatNum = 0.0f;
 		floatNum = 9.5f; //変数floatNumに9.5fを代入
 
-		double doubleNum = 0;
+		double doubleNum = 0.0;
 		doubleNum = 10.5; //変数doubleNumに10.5を代入
 
-		char letter = '0';
+		char letter = '\u0000';
 		letter = 'a'; //変数cに「a」を代入
 		String s = "ハロー"; //変数sに「ハロー」を代入
 
@@ -33,7 +33,7 @@ public class Question1 {
 		System.out.println(longNum + intNum + shortNum + byteNum);
 
 		//20を出力
-		System.out.println(byteNum * 2);
+		System.out.println(floatNum + doubleNum);
 
 		//a ハロー true を出力 (コメントに合わせて変数を結合)
 		System.out.println(letter + " " + s + " " + bool);

@@ -1,6 +1,7 @@
 package curriculum_B;
 
 import java.util.Scanner;
+
 public class Question4 {
 
 	public static void main(String[] args) {
@@ -27,35 +28,38 @@ public class Question4 {
 		int[] numbers3 = { 12, 7, 9, 21, 5, 18 };
 		int max = numbers3[0];
 		int min = numbers3[0];
+
 		for (int n : numbers3) {
+
 			if (n > max) {
 				max = n;
-				if (n < min) {
-					min = n;
-				}
+			}
+			if (n < min) {
+				min = n;
 			}
 		}
+
 		System.out.println("最大値:" + max);
-		System.out.println("最小値" + min);
-		
+		System.out.println("最小値:" + min); // 「:」を追加しました
+
 		//Q5
-		int[] numbers4 = {1,2,3,4,5};
+		int[] numbers4 = { 1, 2, 3, 4, 5 };
 		// 全要素を2倍にする
 		for (int i = 0; i < numbers4.length; i++) {
 			numbers4[i] *= 2;
 		}
 		// 拡張 for 文で結果を表示
-		for (int n: numbers) {
+		for (int n : numbers4) {
 			System.out.println(n);
 		}
-		
+
 		//Q6
-		int[] numbers5  = {4,7,10,15,20};
+		int[] numbers5 = { 4, 7, 10, 15, 20 };
 		Scanner sc = new Scanner(System.in);
 		System.out.println("数値を入力してください");
 		int input = sc.nextInt();
 		boolean found = false;
-		for(int n : numbers5) {
+		for (int n : numbers5) {
 			if (n == input) {
 				found = true;
 				break;
@@ -63,16 +67,16 @@ public class Question4 {
 		}
 		if (found) {
 			System.out.println(input + "は配列に含まれています。");
-		}else {
+		} else {
 			System.out.println(input + "は含まれていません。");
 		}
 		sc.close();
-		
+
 		//Q7
 		int[][] array = {
-			{1 , 2},
-			{3 , 4},
-			{5 , 6},
+				{ 1, 2 },
+				{ 3, 4 },
+				{ 5, 6 },
 		};
 		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array[i].length; j++) {
@@ -81,44 +85,44 @@ public class Question4 {
 		}
 		//Q8
 		int[][] array1 = {
-				{10 , 20 ,30},
-				{40 , 50 ,60},
-				{70 , 80 ,90},
+				{ 10, 20, 30 },
+				{ 40, 50, 60 },
+				{ 70, 80, 90 },
 		};
 		int sum1 = 0;
-		
+
 		for (int[] row : array1) {
 			for (int n : row) {
 				sum1 += n;
 			}
 		}
 		System.out.println("合計値:" + sum1);
-		
-//		//Q9
-//		int[][] array2 = {
-//				{12 , 15 , 8},
-//				{ 6 , 19 ,25},
-//				{30 ,  2 ,10},
-//		};
-//		
-//		int max1 = Integer.MIN_VALUE;
-//		int min1 = Integer.MAX_VALUE;
-//		
-//		for (int[] row : array2) {
-//			for (int n : row) {
-//				if (n > max1) max = n;
-//				if (n < min1) min = n;
-//			}
-//		}
-//		System.out.println("最大値:" + max1);
-//		System.out.println("最小値:" + min1);
-		
+
+		//		//Q9
+		//		int[][] array2 = {
+		//				{12 , 15 , 8},
+		//				{ 6 , 19 ,25},
+		//				{30 ,  2 ,10},
+		//		};
+		//		
+		//		int max1 = Integer.MIN_VALUE;
+		//		int min1 = Integer.MAX_VALUE;
+		//		
+		//		for (int[] row : array2) {
+		//			for (int n : row) {
+		//				if (n > max1) max1 = n;
+		//				if (n < min1) min1 = n;
+		//			}
+		//		}
+		//		System.out.println("最大値:" + max1);
+		//		System.out.println("最小値:" + min1);
+
 		//Q10
 		int[][][] array3 = {
-				{ {1 , 2} , {3 , 4} },
-				{ {5 , 6} , {7 , 8} }
+				{ { 1, 2 }, { 3, 4 } },
+				{ { 5, 6 }, { 7, 8 } }
 		};
-		for (int [][] twoD : array3) {
+		for (int[][] twoD : array3) {
 			for (int[] oneD : twoD) {
 				for (int n : oneD) {
 					System.out.println(n);

@@ -5,7 +5,7 @@ package curriculum_B;
 public class Question5 {
 
     // プログラムの開始地点 (これが「メイン」)
-    public  void main(String[] args) {
+    public static void main(String[] args) {
         
         System.out.println("--- Q1 ---");
         helloWorld();
@@ -48,9 +48,8 @@ public class Question5 {
     } // mainメソッドはここで終わり
     
     /**
-     * これらも「定義」ですが、
-     * Question5 だけで使う簡単な部品なので
-     * main と同じファイルに書いています。
+     * ここから下は「メソッドの定義」の場所
+     * (main の「中」には書けません)
      */
     
     // Q1の定義
@@ -66,33 +65,5 @@ public class Question5 {
     // Q3の定義
     public static boolean isEven(int num) {
         return num % 2 == 0;
-    }
-    public class Greeting{
-    	public void sayHello() {
-    		System.out.println("こんにちは");
-    	}
-    }
-    public class Animal{
-    	private String name; //動物名
-        private double length; //体長
-        private int speed; //速度
-        public void setName(String name) {
-        	this.name = name;
-        }
-        public void setLength(double length) {
-        	this.length = length;
-        }
-        public void setSpeed(int speed) {
-        	this.speed = speed;
-        }
-        public String getName() {
-        	return this.name;
-        }
-        public double getLength() {
-        	return this.length;
-        }
-        public int getSpeed() {
-        	return this.speed;
-        }
     }
 }

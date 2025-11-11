@@ -22,7 +22,9 @@ public class Question1 {
 
 		char letter = '\u0000';
 		letter = 'a'; //変数cに「a」を代入
-		String s = "ハロー"; //変数sに「ハロー」を代入
+		
+		String letters = null;
+		letters = "ハロー";
 
 		boolean bool = false;
 		bool = true; //変数boolにtrueを代入
@@ -35,11 +37,11 @@ public class Question1 {
 		//20を出力
 		System.out.println(floatNum + doubleNum);
 
+		// ★★★ ここを修正しました ★★★
 		//a ハロー true を出力 (コメントに合わせて変数を結合)
-		System.out.println(letter + " " + s + " " + bool);
+		System.out.println(letter + " " + letters + " " + bool);
 
 		// 数字を全て足して出力 (コメントに従い、浮動小数点も含めて加算)
-		// (byteNum * 3 ではなく、全部足すように修正)
 		System.out.println(longNum + intNum + shortNum + byteNum + floatNum + doubleNum);
 
 		//小数点以外の数字を全て出力 (コメントに従い、乗算)

@@ -4,130 +4,151 @@ import java.util.Scanner;
 
 public class Question4 {
 
-	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-		//Q1
-		int[] nums = { 1, 2, 3, 4, 5 };
-		for (int n : nums) {
-			System.out.println(n);
-		}
-		//Q2
-		int[] numbers = { 10, 20, 30, 40, 50 };
-		for (int i = numbers.length - 1; i >= 0; i--) {
-			System.out.println(numbers[i]);
-		}
-		//Q3
-		int[] numbers2 = { 3, 5, 7, 9, 11 };
-		int sum = 0;
-		for (int n : numbers2) {
-			sum += n;
-		}
-		System.out.println("合計値" + sum);
+    public static void main(String[] args) {
+        // TODO 自動生成されたメソッド・スタブ
+        
+        
+        Scanner sc = new Scanner(System.in);
 
-		//Q4
-		int[] numbers3 = { 12, 7, 9, 21, 5, 18 };
-		int max = numbers3[0];
-		int min = numbers3[0];
+        //Q1
+        System.out.println("--- Q1 ---");
+        int[] nums = { 1, 2, 3, 4, 5 };
+        for (int n : nums) {
+            System.out.println(n);
+        }
 
-		for (int n : numbers3) {
+        //Q2
+        System.out.println("--- Q2 ---");
+        int[] numbers = { 10, 20, 30, 40, 50 };
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            System.out.println(numbers[i]);
+        }
 
-			if (n > max) {
-				max = n;
-			}
-			if (n < min) {
-				min = n;
-			}
-		}
+        //Q3
+        System.out.println("--- Q3 ---");
+        int[] numbers2 = { 3, 5, 7, 9, 11 };
+        int sum = 0;
+        for (int n : numbers2) {
+            sum += n;
+        }
+        System.out.println("合計値" + sum);
 
-		System.out.println("最大値:" + max);
-		System.out.println("最小値:" + min); // 「:」を追加しました
+        //Q4
+        System.out.println("--- Q4 ---");
+        int[] numbers3 = { 12, 7, 9, 21, 5, 18 };
+        int max = numbers3[0];
+        int min = numbers3[0];
 
-		//Q5
-		int[] numbers4 = { 1, 2, 3, 4, 5 };
-		// 全要素を2倍にする
-		for (int i = 0; i < numbers4.length; i++) {
-			numbers4[i] *= 2;
-		}
-		// 拡張 for 文で結果を表示
-		for (int n : numbers4) {
-			System.out.println(n);
-		}
+        for (int n : numbers3) {
+            if (n > max) {
+                max = n;
+            }
+            if (n < min) {
+                min = n;
+            }
+        }
+        System.out.println("最大値:" + max);
+        System.out.println("最小値:" + min);
 
-		//Q6
-		int[] numbers5 = { 4, 7, 10, 15, 20 };
-		Scanner sc = new Scanner(System.in);
-		System.out.println("数値を入力してください");
-		int input = sc.nextInt();
-		boolean found = false;
-		for (int n : numbers5) {
-			if (n == input) {
-				found = true;
-				break;
-			}
-		}
-		if (found) {
-			System.out.println(input + "は配列に含まれています。");
-		} else {
-			System.out.println(input + "は含まれていません。");
-		}
-		sc.close();
+        //Q5
+        System.out.println("--- Q5 ---");
+        int[] numbers4 = { 1, 2, 3, 4, 5 };
+        // 全要素を2倍にする
+        for (int i = 0; i < numbers4.length; i++) {
+            numbers4[i] *= 2;
+        }
+        // 拡張 for 文で結果を表示
+        for (int n : numbers4) {
+            System.out.println(n);
+        }
 
-		//Q7
-		int[][] array = {
-				{ 1, 2 },
-				{ 3, 4 },
-				{ 5, 6 },
-		};
-		for (int i = 0; i < array.length; i++) {
-			for (int j = 0; j < array[i].length; j++) {
-				System.out.println(array[i][j]);
-			}
-		}
-		//Q8
-		int[][] array1 = {
-				{ 10, 20, 30 },
-				{ 40, 50, 60 },
-				{ 70, 80, 90 },
-		};
-		int sum1 = 0;
+        //Q6
+        System.out.println("--- Q6 ---");
+        int[] numbers5 = { 4, 7, 10, 15, 20 };
+        
+        System.out.println("数値を入力してください");
+        int input = sc.nextInt();
+        boolean found = false;
+        for (int n : numbers5) {
+            if (n == input) {
+                found = true;
+                break;
+            }
+        }
+        if (found) {
+            System.out.println(input + "は配列に含まれています。");
+        } else {
+            System.out.println(input + "は含まれていません。");
+        }
+        
 
-		for (int[] row : array1) {
-			for (int n : row) {
-				sum1 += n;
-			}
-		}
-		System.out.println("合計値:" + sum1);
+        //Q7
+        System.out.println("--- Q7 ---");
+        int[][] array = {
+                { 1, 2 },
+                { 3, 4 },
+                { 5, 6 },
+        };
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.println(array[i][j]);
+            }
+        }
 
-				//Q9
-				int[][] array2 = {
-						{12 , 15 , 8},
-						{ 6 , 19 ,25},
-						{30 ,  2 ,10},
-				};
-				
-				int max1 = Integer.MIN_VALUE;
-				int min1 = Integer.MAX_VALUE;
-				
-				for (int[] row : array2) {
-					for (int n : row) {
-						if (n > max1) max1 = n;
-						if (n < min1) min1 = n;
-					}
-				}
-				System.out.println("最大値:" + max1);
-				System.out.println("最小値:" + min1);
+        //Q8
+        System.out.println("--- Q8 ---");
+        int[][] array1 = {
+                { 10, 20, 30 },
+                { 40, 50, 60 },
+                { 70, 80, 90 },
+        };
+        int sum1 = 0;
 
-		//Q10
-		int[][][] array3 = {
-				{ { 1, 2 }, { 3, 4 } },
-				{ { 5, 6 }, { 7, 8 } }
-		};
-		for (int[][] twoD : array3) {
-			for (int[] oneD : twoD) {
-				for (int n : oneD) {
-					System.out.println(n);
-				}
-			}
-		}
-	}
+        for (int[] row : array1) {
+            for (int n : row) {
+                sum1 += n;
+            }
+        }
+        System.out.println("合計値:" + sum1);
+
+        //Q9
+        System.out.println("--- Q9 ---");
+        int[][] array2 = {
+                { 12, 15, 8 },
+                { 6, 19, 25 },
+                { 30, 2, 10 },
+        };
+
+        int max1 = Integer.MIN_VALUE;
+        int min1 = Integer.MAX_VALUE;
+
+        for (int[] row : array2) {
+            for (int n : row) {
+                if (n > max1)
+                    max1 = n;
+                if (n < min1)
+                    min1 = n;
+            }
+        }
+        System.out.println("最大値:" + max1);
+        System.out.println("最小値:" + min1);
+
+        //Q10
+        System.out.println("--- Q10 ---");
+        int[][][] array3 = {
+                { { 1, 2 }, { 3, 4 } },
+                { { 5, 6 }, { 7, 8 } }
+        };
+        for (int[][] twoD : array3) {
+            for (int[] oneD : twoD) {
+                for (int n : oneD) {
+                    System.out.println(n);
+                }
+            }
+        }
+        
+        // ★修正★ scanner.close() をmainの最後に移動
+        sc.close();
+        
+    }
 }

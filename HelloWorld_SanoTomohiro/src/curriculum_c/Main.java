@@ -12,18 +12,18 @@ public class Main {
             
             // 1. Player クラス（設計図）から、プレイヤーを作る
             int handInput = scanner.nextInt();
-            Player player = new Player(handInput);
+            Player player = new Player(handInput); // ← Player.java を見に行く
 
             // 2. Cpu クラス（設計図）から、CPUを作る
-            Cpu cpu = new Cpu();
+            Cpu cpu = new Cpu(); // ← Cpu.java を見に行く
 
             // 3. それぞれの手を表示する
             System.out.println("あなたの手: " + player.getHandName());
             System.out.println("CPUの手: " + cpu.getHandName());
 
             // 4. 勝敗を判定する
-            int p = player.getHand(); // プレイヤーの手 (0, 1, 2)
-            int c = cpu.getHand();    // CPUの手 (0, 1, 2)
+            int p = player.getHand();
+            int c = cpu.getHand();
 
             if (p == c) {
                 // --- あいこ ---

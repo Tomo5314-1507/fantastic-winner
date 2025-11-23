@@ -1,0 +1,49 @@
+Player「tomohiro」を作成（さくせい）しました。
+[HP: 71, AT: 8, SP: 15]
+Daemon「Daemon」を読（よ）み込（こ）みました。
+[HP: 85, AT: 12, SP: 6]
+バトルを開始（かいし）します。
+tomohiro の先攻（せんこう）！
+--- ターン 1 ---
+tomohiro の攻撃（こうげき）！
+Daemon は 8 のダメージを受（う）けた。
+Daemon の残（のこ）りHP: 77
+Daemon の攻撃（こうげき）！
+tomohiro は 12 のダメージを受（う）けた。
+tomohiro の残（のこ）りHP: 59
+--- ターン 2 ---
+tomohiro の攻撃（こうげき）！
+Daemon は 8 のダメージを受（う）けた。
+Daemon の残（のこ）りHP: 69
+Daemon の攻撃（こうげき）！
+tomohiro は 12 のダメージを受（う）けた。
+tomohiro の残（のこ）りHP: 47
+--- ターン 3 ---
+tomohiro の攻撃（こうげき）！
+Daemon は 8 のダメージを受（う）けた。
+Daemon の残（のこ）りHP: 61
+Daemon の攻撃（こうげき）！
+tomohiro は 12 のダメージを受（う）けた。
+tomohiro の残（のこ）りHP: 35
+--- ターン 4 ---
+tomohiro の攻撃（こうげき）！
+Daemon は 8 のダメージを受（う）けた。
+Daemon の残（のこ）りHP: 53
+Daemon の攻撃（こうげき）！
+tomohiro は 12 のダメージを受（う）けた。
+tomohiro の残（のこ）りHP: 23
+--- ターン 5 ---
+tomohiro の攻撃（こうげき）！
+Daemon は 8 のダメージを受（う）けた。
+Daemon の残（のこ）りHP: 45
+Daemon の攻撃（こうげき）！
+tomohiro は 12 のダメージを受（う）けた。
+tomohiro の残（のこ）りHP: 11
+--- ターン 6 ---
+tomohiro の攻撃（こうげき）！
+Daemon は 8 のダメージを受（う）けた。
+Daemon の残（のこ）りHP: 37
+Daemon の攻撃（こうげき）！
+tomohiro は 12 のダメージを受（う）けた。
+tomohiro の残（のこ）りHP: 0
+Daemon の勝利（しょうり）...
